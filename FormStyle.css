@@ -1,9 +1,24 @@
 body {
-	
+	background-image: url("background.jpeg");
 	color:white;
 	font-family: "Times New Roman", Times, serif;
 	font-size:18px;
 	text-align:center;
 	margin:20px;
 	padding:20px;
+}
+
+.col1{
+	float:left;
+	margin:5px;
+}
+
+.col2{
+	margin:5px;
+}
+
+
+label{
+	display:inline-block;
+	padding: 10px 10px 10px 0;
 }
