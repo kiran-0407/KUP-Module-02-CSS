@@ -1,0 +1,110 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="FormStyle.css">
+	<title>Survey form </title>
+</head>
+
+<body>
+
+	<!-- Heading -->
+ 	 <header>
+      		<h1 id="title" align="center">Survey Form</h1>
+	  </header>
+
+
+	<p id="description">This is a Survey form</p>
+
+ 	<div class="container">
+	
+		<!-- Initializing the form -->
+	 	 <form id="survey-form">
+			<div class="row">
+				<div class="col1">
+					<label for="name" id="name-label" >Username </label>
+				</div>
+	 			<div class="col2">
+				<input type="text" id="name" placeholder="Enter your username" required>
+				</div>	
+			</div>
+
+			<div class="row">
+				<div class="col1">
+					<label for="email" id="email-label" >Email Id </label>
+				</div>
+				<div class="col2">
+					 <input type="email" id="email" placeholder="Enter your email id" required>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col1">
+					<label for="number" id="number-label">User Id </label>
+				</div>
+				<div class="col2">
+					<input type="number" id="number" min="1" max="1000"  placeholder="Enter User Id"  required>
+				</div>
+			</div>
+
+			<!-- Dropdown -->
+			<div class="row">
+				<div class="col1">
+					<label for="country" class="lab">State</label>
+				</div>
+				<div class="col2">
+					<select name="state" id="state">
+						<option value="assam">Assam</option>
+						<option value="delhi">Delhi</option>
+		  				<option value="gujarat">Gujarat</option>
+		  				<option value="maharashtra">Maharashtra</option>
+		  				<option value="westbengal">West Bengal</option>
+					</select>
+				</div>
+			</div>
+		
+			<!-- Radio Buttons -->
+			<div class="row">
+					<label  id="gender">Gender </label>
+				
+				<div class="col2">
+					<input type="radio" id="male" name="gender" value="male">
+					<label for="male">Male</label>
+					<input type="radio" id="female" name="gender" value="female">
+					<label for="female">Female</label>
+					<input type="radio" id="other" name="gender" value="other">
+					<label for="other">Other</label>
+				</div>
+			</div>
+
+			<!-- Checkboxes -->
+			<div class="row">
+					<label  id="language">Language</label>
+				<div class="col2">
+					<input type="checkbox" id="language1" name="lang1" value="C">
+					<label for="language1"> C</label>
+					<input type="checkbox" id="language2" name="lang2" value="java">
+					<label for="language2"> Java</label>
+					<input type="checkbox" id="language3" name="lang3" value="python">
+					<label for="language3"> Python</label>
+				</div>
+			</div>
+
+			
+			<!-- Textarea for comments -->
+			<div class="row">
+				<div class="col1">
+					<label id="comments">Comments</label><br>
+				</div>
+				<div class="col2">
+					<textarea id="comments" name="comments" placeholder="Please write your comments here." rows="4" cols="50"></textarea>
+				</div>
+			</div>
+	
+			<!-- Submit Button -->
+			<input type="submit" class="button" value="Submit">
+  		</form>
+	</div>
+
+ 
+</body> 
+</html> 
